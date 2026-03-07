@@ -1,0 +1,32 @@
+<svg width="480" height="132" viewBox="0 0 480 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFE600"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="478" height="130" rx="24" fill="url(#bg)" stroke="#334155" stroke-width="2"/>
+
+  <circle cx="66" cy="66" r="42" fill="url(#ring)"/>
+  <circle cx="66" cy="66" r="36" fill="#0F172A"/>
+
+  <circle cx="66" cy="57" r="18" fill="#8A5A3B"/>
+  <path d="M48 58C48 46 56 38 66 38C76 38 84 46 84 58" fill="#0B1220"/>
+  <path d="M44 88C44 74 54 65 66 65C78 65 88 74 88 88" fill="#2563EB"/>
+  <circle cx="60" cy="57" r="2.3" fill="#111827"/>
+  <circle cx="72" cy="57" r="2.3" fill="#111827"/>
+  <path d="M60 64C63 67 69 67 72 64" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="122" y="52" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#93C5FD">Marca Oficial de Ofertas</text>
+  <text x="122" y="86" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" fill="#F8FAFC">LT Radar Prime</text>
+
+  <rect x="356" y="26" width="102" height="32" rx="16" fill="#FFE600"/>
+  <text x="379" y="47" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#1E293B">OFERTAS</text>
+  <rect x="356" y="66" width="102" height="32" rx="16" fill="#22C55E"/>
+  <text x="382" y="87" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#052E16">CUPONS</text>
+</svg>

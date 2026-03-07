@@ -1,0 +1,18 @@
+<svg width="360" height="84" viewBox="0 0 360 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="labelBg" x1="0" y1="0" x2="360" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#FFEDD5"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="358" height="82" rx="20" fill="url(#labelBg)" stroke="#FDBA74" stroke-width="2"/>
+  <text x="24" y="33" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#C2410C">Plataforma inteligente de ofertas</text>
+  <text x="24" y="62" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#9A3412">LT Radar 2100</text>
+
+  <rect x="248" y="18" width="94" height="24" rx="12" fill="#F59E0B"/>
+  <text x="273" y="34" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#7C2D12">TECH</text>
+
+  <rect x="248" y="48" width="94" height="24" rx="12" fill="#F97316"/>
+  <text x="274" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#7C2D12">2100</text>
+</svg>

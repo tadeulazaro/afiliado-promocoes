@@ -1,0 +1,5 @@
+<svg width="220" height="52" viewBox="0 0 220 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="218" height="50" rx="25" fill="#FFE600" stroke="#E5CF00" stroke-width="2"/>
+  <circle cx="27" cy="26" r="12" fill="#2D3277"/>
+  <text x="47" y="31" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2D3277">Mercado Livre</text>
+</svg>

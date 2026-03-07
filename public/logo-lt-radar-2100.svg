@@ -1,0 +1,47 @@
+<svg width="520" height="140" viewBox="0 0 520 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="520" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="20" y1="20" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="518" height="138" rx="26" fill="url(#bg)" stroke="#1E293B" stroke-width="2"/>
+
+  <circle cx="66" cy="70" r="46" fill="url(#ring)"/>
+  <circle cx="66" cy="70" r="40" fill="#020617"/>
+
+  <circle cx="66" cy="68" r="20" fill="#8A5A3B"/>
+  <path d="M46 67C46 54 55 46 66 46C77 46 86 54 86 67" fill="#0B1220"/>
+  <circle cx="60" cy="68" r="2.2" fill="#0F172A"/>
+  <circle cx="72" cy="68" r="2.2" fill="#0F172A"/>
+  <path d="M60 76C63 79 69 79 72 76" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+
+  <circle cx="66" cy="23" r="12" fill="#0F172A" stroke="#22D3EE" stroke-width="1.5"/>
+  <path d="M66 17C68.5 17 70.5 19 70.5 21.5C70.5 23.2 69.5 24.6 68.1 25.3V27H63.9V25.3C62.5 24.6 61.5 23.2 61.5 21.5C61.5 19 63.5 17 66 17Z" fill="#FFE600"/>
+  <rect x="64.8" y="27.5" width="2.4" height="2.8" rx="1" fill="#F59E0B"/>
+
+  <circle cx="102" cy="52" r="12" fill="#0F172A" stroke="#A78BFA" stroke-width="1.5"/>
+  <path d="M98 58L104.5 51.5L101.5 50L106 45L103.8 49.5L107.5 51L101 57.5L102.5 54.8L98 58Z" fill="#22D3EE"/>
+
+  <circle cx="102" cy="92" r="12" fill="#0F172A" stroke="#22C55E" stroke-width="1.5"/>
+  <circle cx="102" cy="92" r="6.8" fill="#2563EB"/>
+  <path d="M95.5 92H108.5M102 85.5C100.6 87.3 100.6 96.7 102 98.5M98.3 87.8C100.6 89.4 103.4 89.4 105.7 87.8M98.3 96.2C100.6 94.6 103.4 94.6 105.7 96.2" stroke="#DBEAFE" stroke-width="1.1" stroke-linecap="round"/>
+
+  <circle cx="30" cy="88" r="12" fill="#0F172A" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="24.5" y="92.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#86EFAC">$</text>
+  <path d="M30 80V97" stroke="#86EFAC" stroke-width="1.2"/>
+
+  <text x="126" y="52" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#67E8F9">Plataforma de Ofertas Inteligentes</text>
+  <text x="126" y="88" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#F8FAFC">LT Radar 2100</text>
+
+  <rect x="381" y="24" width="118" height="34" rx="17" fill="#22D3EE"/>
+  <text x="410" y="46" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#082F49">TECH</text>
+  <rect x="381" y="66" width="118" height="34" rx="17" fill="#A78BFA"/>
+  <text x="406" y="88" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#2E1065">2100</text>
+</svg>

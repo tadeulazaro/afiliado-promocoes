@@ -1,0 +1,8 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="120" rx="20" fill="#0F172A"/>
+  <rect x="14" y="14" width="92" height="92" rx="18" fill="#F97316"/>
+  <path d="M36 75V43H55.5C63.6 43 69 47.8 69 55.2C69 62.6 63.6 67.4 55.5 67.4H45.3V75H36ZM45.3 59.7H54C57.6 59.7 60 57.8 60 55.2C60 52.6 57.6 50.7 54 50.7H45.3V59.7Z" fill="white"/>
+  <path d="M75 75V43H87.8L100.6 61.8L113.4 43H126.2V75H116.9V56.2L104.3 74.5H96.8L84.3 56.3V75H75Z" fill="white"/>
+  <text x="128" y="57" fill="white" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Promo Radar</text>
+  <text x="128" y="84" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500">Ofertas • Cupons • Afiliados</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#FFFDF2"/>
+  <rect x="120" y="140" width="960" height="520" rx="28" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="8"/>
+  <rect x="190" y="210" width="820" height="120" rx="18" fill="#FFE600"/>
+  <text x="240" y="286" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#2D3277">Mercado Livre</text>
+  <text x="190" y="410" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#0F172A">Produto da sua lista oficial</text>
+  <text x="190" y="470" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#475569">Clique para ver preço e oferta atualizada</text>
+  <rect x="190" y="530" width="360" height="64" rx="12" fill="#16A34A"/>
+  <text x="220" y="572" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">Ir para oferta</text>
+</svg>
