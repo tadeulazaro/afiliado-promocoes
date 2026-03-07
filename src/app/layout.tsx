@@ -6,12 +6,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://seu-dominio.com"),
   title: {
-    default: "LT Radar 2100",
-    template: "%s | LT Radar 2100",
+    default: "LT Promo Radar",
+    template: "%s | LT Promo Radar",
   },
   description: "Ofertas e cupons atualizados com links de afiliados do Mercado Livre e parceiros.",
   openGraph: {
-    title: "LT Radar 2100",
+    title: "LT Promo Radar",
     description: "Compare ofertas, use cupons e aproveite promoções reais.",
     type: "website",
   },
@@ -27,8 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <header className="sticky top-0 z-30 border-b border-orange-200/80 bg-orange-50/80 backdrop-blur-xl">
             <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-3">
               <Link href="/" className="flex items-center gap-2">
-                <img src="/logo-mascote-ideias.svg" alt="Lâmpada gênio LT Radar" className="h-14 w-auto" />
-                <img src="/logo-lt-radar-label.svg" alt="LT Radar 2100" className="h-12 w-auto rounded-md" />
+                <img src="/logo-mascote-ideias.svg" alt="Lâmpada com LT Promo Radar" className="h-14 w-auto" />
               </Link>
 
               <div className="flex flex-wrap items-center gap-2">
@@ -53,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           <footer className="border-t border-slate-200 bg-white">
             <div className="mx-auto max-w-6xl px-5 py-4 text-xs text-slate-500">
-              LT Radar 2100 • Divulgação de ofertas e cupons com links de afiliados.
+              LT Promo Radar • Divulgação de ofertas e cupons com links de afiliados.
             </div>
           </footer>
         </div>

@@ -1,6 +1,6 @@
-<svg width="160" height="110" viewBox="0 0 160 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="220" height="120" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="halo" x1="20" y1="10" x2="140" y2="100" gradientUnits="userSpaceOnUse">
+    <linearGradient id="halo" x1="30" y1="8" x2="130" y2="112" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FDE68A"/>
       <stop offset="0.5" stop-color="#F59E0B"/>
       <stop offset="1" stop-color="#FB923C"/>
@@ -9,8 +9,11 @@
       <stop stop-color="#FEF08A"/>
       <stop offset="1" stop-color="#F59E0B"/>
     </linearGradient>
+    <path id="arcTop" d="M 6 58 A 52 52 0 0 1 110 58"/>
+    <path id="arcBottom" d="M 110 58 A 52 52 0 0 1 6 58"/>
   </defs>
 
+  <g transform="translate(20,2)">
   <circle cx="58" cy="56" r="44" fill="url(#halo)"/>
   <circle cx="58" cy="56" r="38" fill="#FFF7ED"/>
 
@@ -34,4 +37,17 @@
 
   <circle cx="18" cy="78" r="11" fill="#FFF7ED" stroke="#F59E0B" stroke-width="1.5"/>
   <text x="13" y="82" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#EA580C">$</text>
+  </g>
+
+  <g transform="translate(20,2)">
+    <text font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" fill="#9A3412" letter-spacing="2">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">LT PROMO</textPath>
+    </text>
+    <text font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" fill="#9A3412" letter-spacing="2">
+      <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">RADAR</textPath>
+    </text>
+  </g>
+
+  <text x="142" y="56" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#9A3412">LT Promo</text>
+  <text x="142" y="80" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#C2410C">Radar</text>
 </svg>
