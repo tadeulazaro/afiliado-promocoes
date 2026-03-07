@@ -116,6 +116,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mt-8 rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-xl font-black text-blue-700">Promoções Magalu Exclusivas</h2>
+          <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Cupons, descontos e produtos Magalu</p>
+        </div>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
+          {/* Produto 1: Magazine Você LT Radar */}
+          <div className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Magazine LT Radar - Loja Oficial</h3>
+            <p className="text-sm text-blue-800 mb-2">Acesse a loja Magazine LT Radar e encontre as melhores ofertas Magalu, cupons de desconto e promoções exclusivas. Produtos Magalu com entrega rápida e garantia.</p>
+            <a href="https://www.magazinevoce.com.br/magazineltradar/" target="_blank" rel="noopener" className="btn btn-blue">Ver ofertas Magalu</a>
+          </div>
+
+          {/* Produto 2: Divulgador Magalu - fxkiwehP */}
+          <div className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Promoção Magalu: Produto Especial 1</h3>
+            <p className="text-sm text-blue-800 mb-2">Aproveite descontos Magalu e cupom de desconto exclusivo neste produto. Clique e confira a oferta!</p>
+            <a href="https://divulgador.magalu.com/fxkiwehP" target="_blank" rel="noopener" className="btn btn-blue">Ver produto Magalu</a>
+          </div>
+
+          {/* Produto 3: Divulgador Magalu - Y0NQtCs4 */}
+          <div className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Promoção Magalu: Produto Especial 2</h3>
+            <p className="text-sm text-blue-800 mb-2">Desconto exclusivo Magalu para afiliados. Confira o preço especial e garanta seu produto!</p>
+            <a href="https://divulgador.magalu.com/Y0NQtCs4" target="_blank" rel="noopener" className="btn btn-blue">Ver produto Magalu</a>
+          </div>
+
+          {/* Produto 4: Divulgador Magalu - o_95nSND */}
+          <div className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Promoção Magalu: Produto Especial 3</h3>
+            <p className="text-sm text-blue-800 mb-2">Oferta Magalu com cupom de desconto. Produto selecionado para você economizar ainda mais.</p>
+            <a href="https://divulgador.magalu.com/o_95nSND" target="_blank" rel="noopener" className="btn btn-blue">Ver produto Magalu</a>
+          </div>
+
+          {/* Produto 5: Divulgador Magalu - whBntrAq */}
+          <div className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Promoção Magalu: Produto Especial 4</h3>
+            <p className="text-sm text-blue-800 mb-2">Desconto Magalu exclusivo para afiliados LT Radar. Clique e aproveite a promoção!</p>
+            <a href="https://divulgador.magalu.com/whBntrAq" target="_blank" rel="noopener" className="btn btn-blue">Ver produto Magalu</a>
+          </div>
+
+          {/* Produto 6: Divulgador Magalu - jSlja6wI */}
+          <div className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Promoção Magalu: Produto Especial 5</h3>
+            <p className="text-sm text-blue-800 mb-2">Oferta Magalu com preço especial e cupom de desconto. Produto selecionado para você economizar.</p>
+            <a href="https://divulgador.magalu.com/jSlja6wI" target="_blank" rel="noopener" className="btn btn-blue">Ver produto Magalu</a>
+          </div>
+        </div>
+      </section>
+
       <section className="mt-8 grid gap-4 md:grid-cols-2">
         {allDeals.map((deal) => (
           <DealCard key={deal.slug} deal={deal} />
