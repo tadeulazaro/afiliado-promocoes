@@ -16,6 +16,7 @@ type GlobalStore = typeof globalThis & {
 const globalStore = globalThis as GlobalStore;
 
 const DB_FILE_PATH = path.join(process.cwd(), "data", "marketplace-db.json");
+let persistenceEnabled = true;
 
 function createEmptyStore(): Store {
   return {
@@ -29,14 +30,31 @@ function ensureStoreLoaded() {
     return globalStore.__ltRadarMarketplaceStore;
   }
 
+  if (!persistenceEnabled) {
+    const empty = createEmptyStore();
+    globalStore.__ltRadarMarketplaceStore = empty;
+    return empty;
+  }
+
   const dir = path.dirname(DB_FILE_PATH);
-  if (!existsSync(dir)) {
-    mkdirSync(dir, { recursive: true });
+  try {
+    if (!existsSync(dir)) {
+      mkdirSync(dir, { recursive: true });
+    }
+  } catch {
+    persistenceEnabled = false;
+    const empty = createEmptyStore();
+    globalStore.__ltRadarMarketplaceStore = empty;
+    return empty;
   }
 
   if (!existsSync(DB_FILE_PATH)) {
     const empty = createEmptyStore();
-    writeFileSync(DB_FILE_PATH, JSON.stringify(empty, null, 2), "utf8");
+    try {
+      writeFileSync(DB_FILE_PATH, JSON.stringify(empty, null, 2), "utf8");
+    } catch {
+      persistenceEnabled = false;
+    }
     globalStore.__ltRadarMarketplaceStore = empty;
     return empty;
   }
@@ -60,11 +78,18 @@ function ensureStoreLoaded() {
 
 function saveStore() {
   const store = ensureStoreLoaded();
-  const dir = path.dirname(DB_FILE_PATH);
-  if (!existsSync(dir)) {
-    mkdirSync(dir, { recursive: true });
+  if (!persistenceEnabled) {
+    return;
   }
-  writeFileSync(DB_FILE_PATH, JSON.stringify(store, null, 2), "utf8");
+  const dir = path.dirname(DB_FILE_PATH);
+  try {
+    if (!existsSync(dir)) {
+      mkdirSync(dir, { recursive: true });
+    }
+    writeFileSync(DB_FILE_PATH, JSON.stringify(store, null, 2), "utf8");
+  } catch {
+    persistenceEnabled = false;
+  }
 }
 
 const allowedCategories: Deal["category"][] = [
