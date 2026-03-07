@@ -73,21 +73,10 @@ export default function HomePage() {
             {categories.map((category) => {
               const brand = brandByCategory[category];
               return (
-                <main className="page-wrap">
-                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
-                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
-
-                  <header className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                    <div className="flex flex-wrap items-center gap-4">
-                      <div className="flex-1">
-                        <h1 className="text-2xl font-black text-orange-700 md:text-3xl">
-                          LT Promo Radar: Promoções, Cupons e Descontos Mercado Livre, Amazon, Shopee, Shein, Magalu, AliExpress
-                        </h1>
-                        <p className="mt-2 text-sm text-slate-700">
-                          Encontre as melhores ofertas online, cupom de desconto, promoções Mercado Livre, cupons Shopee, descontos Amazon, cashback Brasil e promoções de afiliados. Radar de promoções atualizado diariamente para você economizar!
-                        </p>
-                      </div>
-                      <div className="flex flex-wrap items-center gap-2">
+                <div key={category} className="flex items-center gap-2">
+                  <img src={brand.logo} alt={brand.name} className="h-8" />
+                  <span className="text-xs font-bold text-slate-700">{brand.name}</span>
+                </div>
                         <img src="/images/logo-mercado-livre.png" alt="promoções Mercado Livre" className="h-8" />
                         <img src="/images/logo-amazon.png" alt="ofertas Amazon" className="h-8" />
                         <img src="/images/logo-shopee.png" alt="descontos Shopee" className="h-8" />
