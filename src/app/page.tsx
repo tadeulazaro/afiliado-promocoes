@@ -109,7 +109,7 @@ export default function HomePage() {
           <h2 className="text-xl font-black text-slate-900">Top ofertas do dia</h2>
           <p className="text-xs font-semibold uppercase tracking-wide text-orange-700">Mais desconto agora</p>
         </div>
-        <div className="mt-4 grid gap-4 md:grid-cols-2">
+        <div className="mt-4 flex flex-col gap-4">
           {topDeals.map((deal) => (
             <DealCard key={`top-${deal.slug}`} deal={deal} />
           ))}
