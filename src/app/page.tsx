@@ -71,36 +71,39 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => {
               const brand = brandByCategory[category];
-              if (!brand) {
-                return null;
-              }
-
               return (
-                <Link
-                  key={category}
-                  href={`/categoria/${category}`}
-                  className="rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm transition hover:-translate-y-0.5 hover:border-orange-300 hover:shadow"
-                >
-                  <img src={brand.logo} alt={`Logo ${brand.name}`} className="h-8 w-auto" loading="lazy" />
-                </Link>
-              );
-            })}
-          </div>
-        </div>
+                <main className="page-wrap">
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
 
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Link href="/como-alimentar" className="rounded-full border border-blue-300 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase text-blue-700 hover:bg-blue-100">
-            Como Alimentar
-          </Link>
-          <Link href="/sobre" className="rounded-full border border-orange-300 bg-orange-50 px-3 py-1 text-xs font-semibold uppercase text-orange-700 hover:bg-orange-100">
-            Sobre Nós
-          </Link>
-          <Link href="/aviso-afiliado" className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs font-semibold uppercase text-amber-700 hover:bg-amber-100">
-            Aviso de Afiliado
-          </Link>
-        </div>
-      </header>
-
+                  <header className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div className="flex flex-wrap items-center gap-4">
+                      <div className="flex-1">
+                        <h1 className="text-2xl font-black text-orange-700 md:text-3xl">
+                          LT Promo Radar: Promoções, Cupons e Descontos Mercado Livre, Amazon, Shopee, Shein, Magalu, AliExpress
+                        </h1>
+                        <p className="mt-2 text-sm text-slate-700">
+                          Encontre as melhores ofertas online, cupom de desconto, promoções Mercado Livre, cupons Shopee, descontos Amazon, cashback Brasil e promoções de afiliados. Radar de promoções atualizado diariamente para você economizar!
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <img src="/images/logo-mercado-livre.png" alt="promoções Mercado Livre" className="h-8" />
+                        <img src="/images/logo-amazon.png" alt="ofertas Amazon" className="h-8" />
+                        <img src="/images/logo-shopee.png" alt="descontos Shopee" className="h-8" />
+                        <img src="/images/logo-shein.png" alt="cupons Shein" className="h-8" />
+                        <img src="/images/logo-magalu.png" alt="promoções Magalu" className="h-8" />
+                        <img src="/images/logo-aliexpress.png" alt="descontos AliExpress" className="h-8" />
+                      </div>
+                    </div>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      <span className="chip chip-orange">Cupom de desconto</span>
+                      <span className="chip chip-yellow">Cashback Brasil</span>
+                      <span className="chip chip-green">Promoções afiliados</span>
+                      <span className="chip chip-blue">melhores ofertas online</span>
+                      <span className="chip chip-lime">promoções Mercado Livre</span>
+                      <span className="chip chip-pink">cupons Shopee</span>
+                    </div>
+                  </header>
       <section className="mt-6 rounded-2xl border border-orange-200 bg-white p-5 shadow-sm">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-xl font-black text-slate-900">Top ofertas do dia</h2>
