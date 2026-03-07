@@ -1,9 +1,4 @@
-          {/* Produto 7: Borrifador de Azeite e Óleo Magalu */}
-          <div className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50">
-            <h3 className="text-lg font-bold text-blue-900 mb-2">Borrifador de Azeite e Óleo 100ml Magalu</h3>
-            <p className="text-sm text-blue-800 mb-2">Spray pulverizador gourmet para cozinha, salada, churrasco e temperos. Recomendado pelo Influenciador Magalu. Preço especial: <span className="font-bold">R$ 6,99</span> (de R$ 9,99).</p>
-            <a href="https://www.magazineluiza.com.br/borrifador-de-azeite-e-oleo-100ml-em-vidro-spray-pulverizador-gourmet-para-cozinha-salada-churrasco-e-temperos-importado/divulgador/oferta/cd2b4gakc8/ud/azvn/?promoter_id=5626446&partner_id=3440" target="_blank" rel="noopener" className="btn btn-blue">Ver produto Magalu</a>
-          </div>
+import Link from "next/link";
 import Link from "next/link";
 import { DealCard } from "@/components/deal-card";
 import { getAllDeals, getCategories, getTopDealsByDiscount } from "@/lib/deals";
