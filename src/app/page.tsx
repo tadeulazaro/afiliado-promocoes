@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { DealCard } from "@/components/deal-card";
-import { getAllDeals, getCategories } from "@/lib/deals";
+import { getAllDeals, getCategories, getTopDealsByDiscount } from "@/lib/deals";
 
 export const dynamic = "force-dynamic";
 
@@ -16,9 +16,36 @@ const brandByCategory: Record<string, { name: string; logo: string }> = {
 export default function HomePage() {
   const allDeals = getAllDeals();
   const categories = getCategories();
+  const topDeals = getTopDealsByDiscount(6);
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://seu-dominio.com";
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "LT Promo Radar",
+    url: baseUrl,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${baseUrl}/categoria/{categoria}`,
+      "query-input": "required name=categoria",
+    },
+  };
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Top ofertas do dia",
+    itemListElement: topDeals.map((deal, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${baseUrl}/oferta/${deal.slug}`,
+      name: deal.title,
+    })),
+  };
 
   return (
     <main className="page-wrap">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+
       <header className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
         <div className="mb-3 inline-flex items-center rounded-full border border-orange-300 bg-orange-100 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-orange-700">
           🔥 Ofertas quentes atualizadas
@@ -73,6 +100,18 @@ export default function HomePage() {
           </Link>
         </div>
       </header>
+
+      <section className="mt-6 rounded-2xl border border-orange-200 bg-white p-5 shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-xl font-black text-slate-900">Top ofertas do dia</h2>
+          <p className="text-xs font-semibold uppercase tracking-wide text-orange-700">Mais desconto agora</p>
+        </div>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
+          {topDeals.map((deal) => (
+            <DealCard key={`top-${deal.slug}`} deal={deal} />
+          ))}
+        </div>
+      </section>
 
       <section className="mt-8 grid gap-4 md:grid-cols-2">
         {allDeals.map((deal) => (

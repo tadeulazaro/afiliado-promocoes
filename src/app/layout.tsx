@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getSessionUserFromCookie } from "@/lib/auth";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,10 +11,35 @@ export const metadata: Metadata = {
     template: "%s | LT Promo Radar",
   },
   description: "Ofertas e cupons atualizados com links de afiliados do Mercado Livre e parceiros.",
+  keywords: [
+    "promoções",
+    "cupons",
+    "ofertas",
+    "mercado livre",
+    "amazon",
+    "shein",
+    "shopee",
+    "magalu",
+    "aliexpress",
+    "descontos",
+  ],
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://seu-dominio.com",
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
   openGraph: {
     title: "LT Promo Radar",
     description: "Compare ofertas, use cupons e aproveite promoções reais.",
     type: "website",
+    siteName: "LT Promo Radar",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://seu-dominio.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LT Promo Radar",
+    description: "Compare ofertas, use cupons e aproveite promoções reais.",
   },
 };
 
@@ -23,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <body>
+        <GoogleAnalytics />
         <div className="site-shell bg-slate-50 text-slate-900">
           <header className="sticky top-0 z-30 border-b border-orange-200/80 bg-orange-50/80 backdrop-blur-xl">
             <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-3">

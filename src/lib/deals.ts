@@ -22,3 +22,9 @@ export function getDiscountPercent(originalPrice: number, currentPrice: number) 
   const discount = ((originalPrice - currentPrice) / originalPrice) * 100;
   return Math.max(0, Math.round(discount));
 }
+
+export function getTopDealsByDiscount(limit = 6) {
+  return [...getAllDeals()]
+    .sort((a, b) => getDiscountPercent(b.originalPrice, b.currentPrice) - getDiscountPercent(a.originalPrice, a.currentPrice))
+    .slice(0, limit);
+}
