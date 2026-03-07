@@ -40,7 +40,6 @@ export default function HomePage() {
       name: deal.title,
     })),
   };
-
   return (
     <main className="page-wrap">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
