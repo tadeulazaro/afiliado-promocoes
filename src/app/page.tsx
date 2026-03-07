@@ -75,18 +75,10 @@ export default function HomePage() {
                   <img src={brand.logo} alt={brand.name} className="h-8" />
                   <span className="text-xs font-bold text-slate-700">{brand.name}</span>
                 </div>
-                        <img src="/images/logo-mercado-livre.png" alt="promoções Mercado Livre" className="h-8" />
-                        <img src="/images/logo-amazon.png" alt="ofertas Amazon" className="h-8" />
-                        <img src="/images/logo-shopee.png" alt="descontos Shopee" className="h-8" />
-                        <img src="/images/logo-shein.png" alt="cupons Shein" className="h-8" />
-                      <img src="/images/logo-mercado-livre.png" alt="promoções Mercado Livre" className="h-8" /><img src="/images/logo-amazon.png" alt="ofertas Amazon" className="h-8" /><img src="/images/logo-shopee.png" alt="descontos Shopee" className="h-8" /><img src="/images/logo-shein.png" alt="cupons Shein" className="h-8" /><img src="/images/logo-magalu.png" alt="promoções Magalu" className="h-8" /><img src="/images/logo-aliexpress.png" alt="descontos AliExpress" className="h-8" />
-                      <span className="chip chip-yellow">Cashback Brasil</span>
-                      <span className="chip chip-green">Promoções afiliados</span>
-                      <span className="chip chip-blue">melhores ofertas online</span>
-                      <span className="chip chip-lime">promoções Mercado Livre</span>
-                      <span className="chip chip-pink">cupons Shopee</span>
-                    </div>
-                  </header>
+              );
+            })}
+          </div>
+        </div>
       <section className="mt-6 rounded-2xl border border-orange-200 bg-white p-5 shadow-sm">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-xl font-black text-slate-900">Top ofertas do dia</h2>
