@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Link from "next/link";
 import { DealCard } from "@/components/deal-card";
 import { getAllDeals, getCategories, getTopDealsByDiscount } from "@/lib/deals";
 
@@ -81,12 +80,7 @@ export default function HomePage() {
                         <img src="/images/logo-amazon.png" alt="ofertas Amazon" className="h-8" />
                         <img src="/images/logo-shopee.png" alt="descontos Shopee" className="h-8" />
                         <img src="/images/logo-shein.png" alt="cupons Shein" className="h-8" />
-                        <img src="/images/logo-magalu.png" alt="promoções Magalu" className="h-8" />
-                        <img src="/images/logo-aliexpress.png" alt="descontos AliExpress" className="h-8" />
-                      </div>
-                    </div>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <span className="chip chip-orange">Cupom de desconto</span>
+                      <img src="/images/logo-mercado-livre.png" alt="promoções Mercado Livre" className="h-8" /><img src="/images/logo-amazon.png" alt="ofertas Amazon" className="h-8" /><img src="/images/logo-shopee.png" alt="descontos Shopee" className="h-8" /><img src="/images/logo-shein.png" alt="cupons Shein" className="h-8" /><img src="/images/logo-magalu.png" alt="promoções Magalu" className="h-8" /><img src="/images/logo-aliexpress.png" alt="descontos AliExpress" className="h-8" />
                       <span className="chip chip-yellow">Cashback Brasil</span>
                       <span className="chip chip-green">Promoções afiliados</span>
                       <span className="chip chip-blue">melhores ofertas online</span>
