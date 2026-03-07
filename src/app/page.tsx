@@ -79,6 +79,7 @@ export default function HomePage() {
             })}
           </div>
         </div>
+      </header>
       <section className="mt-6 rounded-2xl border border-orange-200 bg-white p-5 shadow-sm">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-xl font-black text-slate-900">Top ofertas do dia</h2>
