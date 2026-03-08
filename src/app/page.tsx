@@ -99,46 +99,78 @@ export default function HomePage() {
           </div>
           <div className="mt-4 grid gap-4 md:grid-cols-2">
             {/* Cards Magalu padronizados */}
-            {[
+            {[ 
               {
                 title: "Borrifador de Azeite e Óleo 100ml em Vidro Spray Pulverizador Gourmet para Cozinha, Salada, Churrasco e Temperos",
-                desc: "4.3 (349 avaliações)\nPreço original: R$ 9,99\nPreço promocional: R$ 6,99\nSpray gourmet para cozinha, salada, churrasco e temperos. Recomendado pelo Influenciador Magalu.",
+                desc: "Spray gourmet para cozinha, salada, churrasco e temperos. Recomendado pelo Influenciador Magalu.",
+                price: "R$ 6,99",
+                oldPrice: "R$ 9,99",
+                rating: "4.3 (349 avaliações)",
+                img: "/images/magalu-borrifador.jpg",
                 url: "https://www.magazineluiza.com.br/borrifador-de-azeite-e-oleo-100ml-em-vidro-spray-pulverizador-gourmet-para-cozinha-salada-churrasco-e-temperos-importado/divulgador/oferta/cd2b4gakc8/ud/azvn/?promoter_id=5626446&partner_id=3440"
               },
               {
                 title: "Magazine LT Radar - Loja Oficial",
-                desc: "Acesse a loja Magazine LT Radar e encontre as melhores ofertas Magalu, cupons de desconto e promoções exclusivas. Produtos Magalu com entrega rápida e garantia.",
+                desc: "Loja oficial Magalu com ofertas, cupons e promoções exclusivas.",
+                price: "",
+                oldPrice: "",
+                rating: "",
+                img: "/images/magalu-logo.svg",
                 url: "https://www.magazinevoce.com.br/magazineltradar/"
               },
               {
                 title: "Promoção Magalu: Produto Especial 1",
-                desc: "Aproveite descontos Magalu e cupom de desconto exclusivo neste produto. Clique e confira a oferta!",
+                desc: "Desconto Magalu e cupom exclusivo. Clique e confira!",
+                price: "",
+                oldPrice: "",
+                rating: "",
+                img: "/images/magalu-logo.svg",
                 url: "https://divulgador.magalu.com/fxkiwehP"
               },
               {
                 title: "Promoção Magalu: Produto Especial 2",
-                desc: "Desconto exclusivo Magalu para afiliados. Confira o preço especial e garanta seu produto!",
+                desc: "Desconto exclusivo Magalu para afiliados. Garanta seu produto!",
+                price: "",
+                oldPrice: "",
+                rating: "",
+                img: "/images/magalu-logo.svg",
                 url: "https://divulgador.magalu.com/Y0NQtCs4"
               },
               {
                 title: "Promoção Magalu: Produto Especial 3",
-                desc: "Oferta Magalu com cupom de desconto. Produto selecionado para você economizar ainda mais.",
+                desc: "Oferta Magalu com cupom de desconto. Economize ainda mais.",
+                price: "",
+                oldPrice: "",
+                rating: "",
+                img: "/images/magalu-logo.svg",
                 url: "https://divulgador.magalu.com/o_95nSND"
               },
               {
                 title: "Promoção Magalu: Produto Especial 4",
-                desc: "Desconto Magalu exclusivo para afiliados LT Radar. Clique e aproveite a promoção!",
+                desc: "Desconto Magalu exclusivo para afiliados LT Radar.",
+                price: "",
+                oldPrice: "",
+                rating: "",
+                img: "/images/magalu-logo.svg",
                 url: "https://divulgador.magalu.com/whBntrAq"
               },
               {
                 title: "Promoção Magalu: Produto Especial 5",
-                desc: "Oferta Magalu com preço especial e cupom de desconto. Produto selecionado para você economizar.",
+                desc: "Oferta Magalu com preço especial e cupom de desconto.",
+                price: "",
+                oldPrice: "",
+                rating: "",
+                img: "/images/magalu-logo.svg",
                 url: "https://divulgador.magalu.com/jSlja6wI"
               }
             ].map((prod, idx) => (
               <div key={idx} className="promo-card border border-blue-300 rounded-xl p-4 bg-blue-50 flex flex-col justify-between">
+                <img src={prod.img} alt={prod.title} className="h-24 w-auto mx-auto mb-2 object-contain" />
                 <h3 className="text-lg font-bold text-blue-900 mb-2">{prod.title}</h3>
                 <p className="text-sm text-blue-800 mb-2">{prod.desc}</p>
+                {prod.rating && <p className="text-xs text-blue-700 mb-1">{prod.rating}</p>}
+                {prod.oldPrice && <p className="text-xs text-blue-700 line-through">{prod.oldPrice}</p>}
+                {prod.price && <p className="text-base font-bold text-blue-900 mb-2">{prod.price}</p>}
                 <a href={prod.url} target="_blank" rel="noopener" className="btn btn-blue">Ver produto Magalu</a>
               </div>
             ))}
