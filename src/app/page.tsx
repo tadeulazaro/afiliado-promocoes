@@ -101,6 +101,11 @@ export default function HomePage() {
             {/* Cards Magalu padronizados */}
             {[
               {
+                title: "Borrifador de Azeite e Óleo 100ml em Vidro Spray Pulverizador Gourmet para Cozinha, Salada, Churrasco e Temperos",
+                desc: "4.3 (349 avaliações)\nPreço original: R$ 9,99\nPreço promocional: R$ 6,99\nSpray gourmet para cozinha, salada, churrasco e temperos. Recomendado pelo Influenciador Magalu.",
+                url: "https://www.magazineluiza.com.br/borrifador-de-azeite-e-oleo-100ml-em-vidro-spray-pulverizador-gourmet-para-cozinha-salada-churrasco-e-temperos-importado/divulgador/oferta/cd2b4gakc8/ud/azvn/?promoter_id=5626446&partner_id=3440"
+              },
+              {
                 title: "Magazine LT Radar - Loja Oficial",
                 desc: "Acesse a loja Magazine LT Radar e encontre as melhores ofertas Magalu, cupons de desconto e promoções exclusivas. Produtos Magalu com entrega rápida e garantia.",
                 url: "https://www.magazinevoce.com.br/magazineltradar/"
